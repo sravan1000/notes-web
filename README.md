@@ -1,3 +1,8 @@
+This is Notes web, you can find link for notes api below
+
+##The API part : https://github.com/sravan1000/notes-web
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
