@@ -67,7 +67,7 @@ export class Login extends Component {
                 <div className = "form-element">
                     <div className = 'form-label'><label> Password </label></div>
                     <div className = 'form-tag'>
-                    <input type='text' name="password" placeholder="Please type password" value = {this.state.password} onChange={this.ChangeHandler}/> 
+                    <input type='password' name="password" placeholder="Please type password" value = {this.state.password} onChange={this.ChangeHandler}/> 
                     </div>
                 </div>
                 <div className = "form-element">
