@@ -1,25 +1,44 @@
 import React from 'react';
-import logo from './logo.svg';
+import Notes from './components/Notes';
 import './App.css';
+import {BrowserRouter, Route, Redirect} from 'react-router-dom';
+import Register from './Pages/Forms/Register';
+import Login from './Pages/Forms/Login';
+import Logout from './Pages/Forms/Logout';
 
+function isUserLoggedIn(){
+  let token = localStorage.getItem("token");
+  if(token) { return true }else{ return false};
+}
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Route exact path="/" render={() => (
+        isUserLoggedIn() ? (
+          <Redirect to="/notes" />
+        ) : (
+          <Redirect to="/login" />
+        )
+      )}/>
+      <Route exact path="/login" render={() => (
+        isUserLoggedIn() ? (
+          <Redirect to="/notes" />
+        ) : (
+          <Redirect to="/login" />
+        )
+      )}/>
+      <Route exact path = '/login' component= {Login} />
+      <Route exact path = '/register' component= {Register} />
+      <Route exact path="/notes" render={() => (
+        isUserLoggedIn() ? (
+          <Redirect to="/notes" />
+        ) : (
+          <Redirect to="/login" />
+        )
+      )}/>
+      <Route  path = '/notes' component= {Notes} />  
+      <Route  path = '/logout' component= {Logout} />  
+    </BrowserRouter>
   );
 }
 

@@ -16,7 +16,225 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #09d3ac;
+}
+
+.Notes-container{
+  min-height: 100vh;
+  background-color: #282c34;
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+.container-title{
+  height:50px;
+  width: calc(100%- 180px);
+  line-height: 50px;
+  font-size: calc(10px + 2vmin);
+  justify-content: center;
+  text-align: center;
+  
+  /* padding-left: 10px */
+}
+
+.Notes-box{
+  width:180px;
+  height: 250px;
+  float: left;
+  font-size: calc(10px + 2vmin);
+  padding: 20px;
+  margin-left:2%;
+  border: 1px solid cadetblue;
+  margin-top:20px;
+  cursor: pointer;
+}
+.Notes-title{
+  width: 100%;
+  height: 20%;
+  background-color: rgb(78, 143, 197);
+  padding: 10px;
+  line-height: 40px;
+}
+
+.Notes-disc{
+  width: 100%;
+  height: 55%;
+  padding-top: 10px;
+  margin-top: 5%;
+  border-top: 1px solid steelblue;
+}
+
+.form-container{
+  width:100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color:  #282c34;
+  color: white;
+}
+
+.form-element{
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+}
+.form-label{  
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.form-tag{
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  float: left;
+  line-height: 50px;
+}
+.submit-btn{
+  width: 100px;
+  height: 40px;
+  background-color: #282c34 ;
+  color: white;
+  margin-top: 20px;
+}
+/* .Notes-box:hover{
+  background-color: rgb(5, 95, 95);
+  width: 200px;
+  height: 260px;
+  z-index: 1.15vm;
+  box-shadow: 1px 2px 2px seagreen;
+  margin-left:1%;
+  padding: 20px;
+} */
+
+.container-title-title{
+  float: left;
+  padding-left: 10px;
+}
+.container-but{
+  float: right;
+}
+
+.container-but-cont{
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  background-color:  #282c34;
+  border: 0px;
+  color: white;
+  height: 50px;
+}
+.container-but-cont-selected{
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  background-color:  #282c34;
+  border: 0px;
+  border-bottom: 1px solid cadetblue;
+  color: white;
+  height: 50px;
+}
+
+.modal-container{
+  width: 100%;
+  height: 100%;
+  background-color:   #282c34;
+  position: absolute;
+  left: 0px;
+  top:0px;
+  color: white;
+}
+
+.modal-title{
+  width: 70%;
+  height: 50px;
+  margin-left: 15%;
+  text-align: center;
+  line-height: 50px;
+  border-bottom: 1px solid cadetblue;
+  font-size: calc(10px + 2vmin);
+}
+.modal-body{
+  width: 80%;
+  margin-left: 10%;
+  height: calc(100% - 150px);
+  /* background-color: red; */
+  margin-top: 20px;
+}
+.modal-notes-title{
+  width: 100%;
+  height: 50px;
+  background-color: red;
+}
+.modal-text-input,.modal-text-area-input{
+  width: 100%;
+  height: 100%;
+  background-color:   #282c34;
+  border: 0px;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 5px;
+}
+
+.modal-notes-body{
+  width: 100%;
+  height: 80%;
+  margin-top:10px;
+}
+
+.modal-footer{
+  height: 50px;
+  width: 100%;
+}
+
+.submit-button{
+  float: right;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.modal-but-cont{
+  width: 100px;
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  background-color: teal;
+  border: 0px;
+  color: black;
+  height: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: calc(10px + 2vmin);
+  cursor: pointer;
+}
+
+.modal-but-cont-close{
+  text-align: center;
+  background-color:  #282c34;
+  border: 0px;
+  color: white;
+  height: 50px;
+  position: absolute;
+  top:5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.Notes-title-more{
+  
+  text-align: center;
+  background-color: #282c34;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
