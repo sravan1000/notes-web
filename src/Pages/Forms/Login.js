@@ -7,15 +7,16 @@ export class Login extends Component {
     constructor(){
         super();
         this.state = {
-            email : "",
-            password: "",
-            showHome : false
+            email : "default@gmai.com",
+            password: "shit",
+            showHome : true
         };
     }
     
     ChangeHandler = (event) =>{
+        console.log('hello shitty');
         this.setState({
-            [event.target.name]: event.target.value
+            [event.target.name]: event.target.something
         })
     }
 
