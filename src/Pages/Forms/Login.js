@@ -8,7 +8,7 @@ export class Login extends Component {
         super();
         this.state = {
             email : "default@gmai.com",
-            password: "shit",
+            password: "shit-power-10",
             showHome : true
         };
     }
@@ -16,7 +16,7 @@ export class Login extends Component {
     ChangeHandler = (event) =>{
         console.log('hello shitty');
         this.setState({
-            [event.target.name]: event.target.something
+            [event.target.name]: event.target.somethingsomething
         })
     }
 
